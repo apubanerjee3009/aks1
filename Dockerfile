@@ -1,3 +1,6 @@
+
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/index.html
 # Step 1: Base image hishebe Nginx use kora hochhe
 FROM nginx:alpine
 
