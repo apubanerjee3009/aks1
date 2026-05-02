@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: apubanerjeeaks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apubanerjeeaks
+  template:
+    metadata:
+      labels:
+        app: apubanerjeeaks 
+    spec:
+      containers:
+        - name: apubanerjeeaks 
+          image: mytestaks.azurecr.io/apubanerjeeaks
+          ports:
+          - containerPort: 80
